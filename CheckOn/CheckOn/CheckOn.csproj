@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38D87D32-0FFD-4805-9AD4-27976F8078F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CheckOn</RootNamespace>
+    <AssemblyName>CheckOn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAsesorAgregarVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesorAgregarVuelo.Designer.cs">
+      <DependentUpon>FrmAsesorAgregarVuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsesorAsignarCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesorAsignarCodigo.Designer.cs">
+      <DependentUpon>FrmAsesorAsignarCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsesorInfoCodigoAsignado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesorInfoCodigoAsignado.Designer.cs">
+      <DependentUpon>FrmAsesorInfoCodigoAsignado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsesorInfoVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesorInfoVuelo.Designer.cs">
+      <DependentUpon>FrmAsesorInfoVuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsesorPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesorPrincipal.Designer.cs">
+      <DependentUpon>FrmAsesorPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCallCenterMaleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCallCenterMaleta.Designer.cs">
+      <DependentUpon>FrmCallCenterMaleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCallCenterPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCallCenterPrincipal.Designer.cs">
+      <DependentUpon>FrmCallCenterPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCallCenterVuelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCallCenterVuelo.Designer.cs">
+      <DependentUpon>FrmCallCenterVuelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicial.Designer.cs">
+      <DependentUpon>FrmInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPruebas.Designer.cs">
+      <DependentUpon>FrmPruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAsesorAgregarVuelo.resx">
+      <DependentUpon>FrmAsesorAgregarVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsesorAsignarCodigo.resx">
+      <DependentUpon>FrmAsesorAsignarCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsesorInfoCodigoAsignado.resx">
+      <DependentUpon>FrmAsesorInfoCodigoAsignado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsesorInfoVuelo.resx">
+      <DependentUpon>FrmAsesorInfoVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsesorPrincipal.resx">
+      <DependentUpon>FrmAsesorPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCallCenterMaleta.resx">
+      <DependentUpon>FrmCallCenterMaleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCallCenterPrincipal.resx">
+      <DependentUpon>FrmCallCenterPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCallCenterVuelo.resx">
+      <DependentUpon>FrmCallCenterVuelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicial.resx">
+      <DependentUpon>FrmInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPruebas.resx">
+      <DependentUpon>FrmPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\CheckOn.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\CheckOn.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\FrmCallCenterPrincipal.datasource" />
+    <None Include="Properties\DataSources\FrmCallCenterVuelo.datasource" />
+    <None Include="Properties\DataSources\FrmInicial.datasource" />
+    <None Include="Properties\DataSources\FrmLogin.datasource" />
+    <None Include="Properties\DataSources\FrmRegistro.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
