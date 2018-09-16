@@ -59,9 +59,9 @@
             this.tblRegistro.ColumnCount = 3;
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
+            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
             this.tblRegistro.Controls.Add(this.grbRegistro, 1, 1);
-            this.tblRegistro.Location = new System.Drawing.Point(1, 18);
+            this.tblRegistro.Location = new System.Drawing.Point(1, 21);
             this.tblRegistro.Name = "tblRegistro";
             this.tblRegistro.RowCount = 3;
             this.tblRegistro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
@@ -80,9 +80,9 @@
             this.grbRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.grbRegistro.Controls.Add(this.tableLayoutPanel3);
             this.grbRegistro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbRegistro.Location = new System.Drawing.Point(212, 67);
+            this.grbRegistro.Location = new System.Drawing.Point(210, 67);
             this.grbRegistro.Name = "grbRegistro";
-            this.grbRegistro.Size = new System.Drawing.Size(532, 362);
+            this.grbRegistro.Size = new System.Drawing.Size(529, 362);
             this.grbRegistro.TabIndex = 0;
             this.grbRegistro.TabStop = false;
             // 
@@ -165,6 +165,7 @@
             this.btnCrear.TabIndex = 4;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // lblHoraLlegada
             // 
@@ -351,7 +352,6 @@
         private System.Windows.Forms.Label lblHoraSalida;
         private System.Windows.Forms.Label lblHoraLlegada;
         private System.Windows.Forms.Label lblLugarSalida;
-        private System.Windows.Forms.TextBox txtHoraSalida;
         private System.Windows.Forms.TextBox txtLugarSalida;
         private System.Windows.Forms.TextBox txtHoraLlegada;
         private System.Windows.Forms.TextBox txtLugarDestino;
@@ -359,9 +359,10 @@
         private System.Windows.Forms.TextBox txtIdVuelo;
         private System.Windows.Forms.Label lblTipoVuelo;
         private System.Windows.Forms.Label lblVuelo;
-        private System.Windows.Forms.ComboBox cmbTipoVuelo;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.TextBox txtHoraSalida;
+        private System.Windows.Forms.ComboBox cmbTipoVuelo;
     }
 }
