@@ -16,5 +16,26 @@ namespace CheckOn
         {
             InitializeComponent();
         }
+
+        private void tblRegistro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCrearVuelo_Click(object sender, EventArgs e)
+        {
+            FrmAsesorAgregarVuelo frmAgregarVuelo = new FrmAsesorAgregarVuelo();
+            this.Hide();
+            frmAgregarVuelo.ShowDialog();
+            this.Show();
+        }
+
+        private void btnBuscarVuelo_Click(object sender, EventArgs e)
+        {
+            FrmAsesorInfoVuelo frmInfoVuelo = new FrmAsesorInfoVuelo();
+            this.Hide();
+            frmInfoVuelo.ShowDialog();
+            this.Show();
+        }
     }
 }
