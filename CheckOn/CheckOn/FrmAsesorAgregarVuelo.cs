@@ -30,13 +30,53 @@ namespace CheckOn
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFechaSalida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCrearVuelo_Click(object sender, EventArgs e)
+        {
             conexion.ConnectionString = "server=localhost; database=check - on; Uid=root; Pwd = ; SslMode=none;";
             MySqlCommand comando = new MySqlCommand();
             try
             {
                 MessageBox.Show("conexion iniciada");
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "insert into flight(IdFlight, HourExit, HourArrive, salida, Destination, TypeFlight) values(" + txtIdVuelo.Text + ", " + txtHoraSalida.Text + ", '" + txtHoraLlegada.Text + "', '" + txtLugarSalida.Text + "' , '" + txtLugarDestino.Text + "' , '" + cmbTipoVuelo.Text + "')";
+                string horaLlegada = txtHoraLlegadaH.Text + txtHoraLlegadaM.Text + txtHoraLlegadaS.Text;
+                string horaSalida = txtHoraSalidaH.Text + txtHoraSalidaM.Text + txtHoraSlidaS.Text;
+                string FechaLlegada = txtFechaLY.Text + txtFechaLM.Text+ txtFechaLD.Text;
+                string FechaSalida = txtFechaSY.Text + txtFechaSM.Text + txtFechaSD.Text;
+
+                comando.CommandText = "insert into flight(IdFlight, HourExit, HourArrive, DataSalida, DataArrive, salida, Destination, TypeFlight) values(" + txtIdVuelo.Text + ", " + horaSalida + ", '" + horaLlegada + "', '" + FechaSalida + "', '" + FechaLlegada + "', '" + txtLugarSalida.Text + "' , '" + txtLugarDestino.Text + "' , '" + cmbTipoVuelo.Text + "')";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -47,10 +87,9 @@ namespace CheckOn
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
 
 
         }
-        
     }
 }
