@@ -69,14 +69,16 @@ namespace CheckOn
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                MessageBox.Show("conexion iniciada");
+                
                 comando.CommandType = CommandType.Text;
                 string horaLlegada = txtHoraLlegadaH.Text + txtHoraLlegadaM.Text + txtHoraLlegadaS.Text;
                 string horaSalida = txtHoraSalidaH.Text + txtHoraSalidaM.Text + txtHoraSlidaS.Text;
                 string FechaLlegada = txtFechaLY.Text + txtFechaLM.Text+ txtFechaLD.Text;
                 string FechaSalida = txtFechaSY.Text + txtFechaSM.Text + txtFechaSD.Text;
 
-                comando.CommandText = "insert into flight(IdFlight, HourExit, HourArrive, DataSalida, DataArrive, salida, Destination, TypeFlight) values(" + txtIdVuelo.Text + ", " + horaSalida + ", '" + horaLlegada + "', '" + FechaSalida + "', '" + FechaLlegada + "', '" + txtLugarSalida.Text + "' , '" + txtLugarDestino.Text + "' , '" + cmbTipoVuelo.Text + "')";
+                comando.CommandText = "insert into flight(IdFlight, HourExit, HourArrive, DataSalida, DataArrive, salida, Destination, TypeFlight) values(" + txtIdVuelo.Text + ", " + horaSalida.ToString() + ", '" + horaLlegada + "', '" + FechaSalida + "', '" + FechaLlegada + "', '" + txtLugarSalida.Text + "' , '" + txtLugarDestino.Text + "' , '" + cmbTipoVuelo.Text + "')";
+                
+
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -90,6 +92,13 @@ namespace CheckOn
 
 
 
+        }
+
+        private void btnBuscarVuelo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAsesorPrincipal frmAsesorPrincipal = new FrmAsesorPrincipal();
+            frmAsesorPrincipal.ShowDialog();
         }
     }
 }

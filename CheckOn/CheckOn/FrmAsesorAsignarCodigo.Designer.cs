@@ -30,23 +30,17 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.grbCallCenterVuelo = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.gpbInfoMaleta = new System.Windows.Forms.GroupBox();
-            this.btnAsignar = new System.Windows.Forms.Button();
-            this.txtDocumentoUsuario = new System.Windows.Forms.TextBox();
-            this.btnBuscarVuelo = new System.Windows.Forms.Button();
-            this.gpbInfoPasajero = new System.Windows.Forms.GroupBox();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
             this.txtCodMaleta = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.gpbInfoMaleta.SuspendLayout();
-            this.gpbInfoPasajero.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -55,7 +49,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-24, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -73,153 +67,95 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grbCallCenterVuelo.AutoSize = true;
             this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.grbCallCenterVuelo.Controls.Add(this.tableLayoutPanel3);
+            this.grbCallCenterVuelo.Controls.Add(this.btnRegistrar);
+            this.grbCallCenterVuelo.Controls.Add(this.label4);
+            this.grbCallCenterVuelo.Controls.Add(this.label3);
+            this.grbCallCenterVuelo.Controls.Add(this.label2);
+            this.grbCallCenterVuelo.Controls.Add(this.label1);
+            this.grbCallCenterVuelo.Controls.Add(this.txtApellidos);
+            this.grbCallCenterVuelo.Controls.Add(this.txtCodMaleta);
+            this.grbCallCenterVuelo.Controls.Add(this.txtCedula);
+            this.grbCallCenterVuelo.Controls.Add(this.txtNombres);
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbCallCenterVuelo.Location = new System.Drawing.Point(182, 52);
+            this.grbCallCenterVuelo.Location = new System.Drawing.Point(181, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
-            this.grbCallCenterVuelo.Size = new System.Drawing.Size(544, 356);
+            this.grbCallCenterVuelo.Size = new System.Drawing.Size(542, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
             // 
-            // tableLayoutPanel3
+            // txtNombres
             // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 26);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.63636F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.36364F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(522, 323);
-            this.tableLayoutPanel3.TabIndex = 1;
+            this.txtNombres.Location = new System.Drawing.Point(257, 62);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(121, 20);
+            this.txtNombres.TabIndex = 0;
             // 
-            // tableLayoutPanel2
+            // txtCedula
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
-            this.tableLayoutPanel2.Controls.Add(this.gpbInfoMaleta, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txtDocumentoUsuario, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.btnBuscarVuelo, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.gpbInfoPasajero, 0, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 65);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.69663F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.30337F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 141F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(516, 196);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // gpbInfoMaleta
-            // 
-            this.gpbInfoMaleta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gpbInfoMaleta.Controls.Add(this.tableLayoutPanel4);
-            this.gpbInfoMaleta.Location = new System.Drawing.Point(236, 57);
-            this.gpbInfoMaleta.Name = "gpbInfoMaleta";
-            this.gpbInfoMaleta.Size = new System.Drawing.Size(193, 136);
-            this.gpbInfoMaleta.TabIndex = 9;
-            this.gpbInfoMaleta.TabStop = false;
-            this.gpbInfoMaleta.Text = "Información de la maleta";
-            // 
-            // btnAsignar
-            // 
-            this.btnAsignar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAsignar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAsignar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAsignar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignar.Location = new System.Drawing.Point(113, 3);
-            this.btnAsignar.Name = "btnAsignar";
-            this.btnAsignar.Size = new System.Drawing.Size(72, 23);
-            this.btnAsignar.TabIndex = 5;
-            this.btnAsignar.Text = "ASIGNAR";
-            this.btnAsignar.UseVisualStyleBackColor = false;
-            // 
-            // txtDocumentoUsuario
-            // 
-            this.txtDocumentoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDocumentoUsuario.Location = new System.Drawing.Point(236, 26);
-            this.txtDocumentoUsuario.MaxLength = 20;
-            this.txtDocumentoUsuario.Name = "txtDocumentoUsuario";
-            this.txtDocumentoUsuario.Size = new System.Drawing.Size(193, 20);
-            this.txtDocumentoUsuario.TabIndex = 6;
-            // 
-            // btnBuscarVuelo
-            // 
-            this.btnBuscarVuelo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarVuelo.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnBuscarVuelo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscarVuelo.Location = new System.Drawing.Point(435, 26);
-            this.btnBuscarVuelo.Name = "btnBuscarVuelo";
-            this.btnBuscarVuelo.Size = new System.Drawing.Size(78, 25);
-            this.btnBuscarVuelo.TabIndex = 4;
-            this.btnBuscarVuelo.Text = "BUSCAR";
-            this.btnBuscarVuelo.UseVisualStyleBackColor = false;
-            // 
-            // gpbInfoPasajero
-            // 
-            this.gpbInfoPasajero.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gpbInfoPasajero.Controls.Add(this.btnVolver);
-            this.gpbInfoPasajero.Location = new System.Drawing.Point(3, 57);
-            this.gpbInfoPasajero.Name = "gpbInfoPasajero";
-            this.gpbInfoPasajero.Size = new System.Drawing.Size(227, 136);
-            this.gpbInfoPasajero.TabIndex = 8;
-            this.gpbInfoPasajero.TabStop = false;
-            this.gpbInfoPasajero.Text = "Información del pasajero";
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnVolver.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(49, 107);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(121, 23);
-            this.btnVolver.TabIndex = 5;
-            this.btnVolver.Text = "VOLVER";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.04255F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.95745F));
-            this.tableLayoutPanel4.Controls.Add(this.btnAsignar, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtCodMaleta, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 107);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(188, 29);
-            this.tableLayoutPanel4.TabIndex = 0;
+            this.txtCedula.Location = new System.Drawing.Point(257, 147);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(121, 20);
+            this.txtCedula.TabIndex = 1;
             // 
             // txtCodMaleta
             // 
-            this.txtCodMaleta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodMaleta.Location = new System.Drawing.Point(3, 3);
+            this.txtCodMaleta.Location = new System.Drawing.Point(257, 190);
             this.txtCodMaleta.Name = "txtCodMaleta";
-            this.txtCodMaleta.Size = new System.Drawing.Size(104, 20);
-            this.txtCodMaleta.TabIndex = 6;
-            this.txtCodMaleta.Text = "Cód. maleta";
+            this.txtCodMaleta.Size = new System.Drawing.Size(121, 20);
+            this.txtCodMaleta.TabIndex = 2;
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(257, 104);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(121, 20);
+            this.txtApellidos.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(143, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nombres";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(143, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Apellidos";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(146, 150);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Cedula";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(131, 193);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Codigo Maleta";
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Location = new System.Drawing.Point(243, 266);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistrar.TabIndex = 8;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // FrmAsesorAsignarCodigo
             // 
@@ -233,13 +169,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.grbCallCenterVuelo.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.gpbInfoMaleta.ResumeLayout(false);
-            this.gpbInfoPasajero.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.grbCallCenterVuelo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,15 +178,14 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox grbCallCenterVuelo;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.GroupBox gpbInfoMaleta;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button btnAsignar;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtCodMaleta;
-        private System.Windows.Forms.TextBox txtDocumentoUsuario;
-        private System.Windows.Forms.Button btnBuscarVuelo;
-        private System.Windows.Forms.GroupBox gpbInfoPasajero;
-        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.TextBox txtNombres;
     }
 }

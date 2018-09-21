@@ -27,7 +27,7 @@ namespace CheckOn
             FrmAsesorAgregarVuelo frmAgregarVuelo = new FrmAsesorAgregarVuelo();
             this.Hide();
             frmAgregarVuelo.ShowDialog();
-            this.Show();
+            
         }
 
         private void btnBuscarVuelo_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace CheckOn
             FrmAsesorInfoVuelo frmInfoVuelo = new FrmAsesorInfoVuelo();
             this.Hide();
             frmInfoVuelo.ShowDialog();
-            this.Show();
+            
         }
     }
 }

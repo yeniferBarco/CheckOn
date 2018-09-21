@@ -69,6 +69,9 @@ namespace CheckOn
             if (leer.Read())
             {
                 MessageBox.Show("Bienvenido");
+                this.Hide();
+                FrmAsesorPrincipal frmAsesorPrincipal = new FrmAsesorPrincipal();
+                frmAsesorPrincipal.ShowDialog();
             }
             else
             {

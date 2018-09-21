@@ -67,7 +67,6 @@ namespace CheckOn
             conexion.ConnectionString = "server-localhost; database-check - on; uid-root; pwd = ; SslMode=none;";
             try
             {
-                MessageBox.Show("conexion iniciada");
             }
             catch (Exception ex)
             {
