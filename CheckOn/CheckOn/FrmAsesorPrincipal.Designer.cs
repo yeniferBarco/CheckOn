@@ -47,7 +47,7 @@
             this.tblRegistro.ColumnCount = 3;
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tblRegistro.Controls.Add(this.grbRegistro, 1, 1);
             this.tblRegistro.Location = new System.Drawing.Point(1, 20);
             this.tblRegistro.Name = "tblRegistro";
@@ -71,7 +71,7 @@
             this.grbRegistro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbRegistro.Location = new System.Drawing.Point(212, 67);
             this.grbRegistro.Name = "grbRegistro";
-            this.grbRegistro.Size = new System.Drawing.Size(534, 362);
+            this.grbRegistro.Size = new System.Drawing.Size(533, 362);
             this.grbRegistro.TabIndex = 0;
             this.grbRegistro.TabStop = false;
             // 
