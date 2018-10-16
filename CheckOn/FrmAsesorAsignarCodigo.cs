@@ -31,19 +31,23 @@ namespace CheckOn
             {
 
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "insert into passenger(NamePassenger, LastNamePassenger, CC_Passenger, IdDivaice) values('" + txtNombres.Text + "', '" + txtApellidos.Text + "', '" + txtCedula.Text + "', '" + txtCodMaleta.Text +  "')";
+                comando.CommandText = "insert into passenger(NamePassenger, LastNamePassenger, CC_Passenger, IdDivaice) values('" + txtNombres.Text + "', '" + txtApellidos.Text + "', '" + txtCedula.Text + "', '" + txtCodMaleta.Text + "')";
+                
                 comando.Connection = conexion;
                 
 
                 conexion.Open();
                 comando.ExecuteNonQuery();
-                conexion.Close();
+              
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
+            comando.CommandText = "insert into layover(CC_Passenger, IdFlight) values('" + txtCedula.Text + "', '" + txtIdVuelo.Text + "')";
+            comando.ExecuteNonQuery();
+            conexion.Close();
 
         }
 
