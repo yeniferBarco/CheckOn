@@ -40,11 +40,11 @@
             this.lblContrasena = new System.Windows.Forms.Label();
             this.lblDocumento = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtId_User = new System.Windows.Forms.TextBox();
-            this.lblTipoUsuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblTipoUsuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.tblRegistro.SuspendLayout();
@@ -67,7 +67,7 @@
             this.tblRegistro.ColumnCount = 3;
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tblRegistro.Controls.Add(this.grbRegistro, 1, 1);
             this.tblRegistro.Location = new System.Drawing.Point(1, 15);
             this.tblRegistro.Name = "tblRegistro";
@@ -89,9 +89,9 @@
             this.grbRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.grbRegistro.Controls.Add(this.tableLayoutPanel3);
             this.grbRegistro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbRegistro.Location = new System.Drawing.Point(209, 67);
+            this.grbRegistro.Location = new System.Drawing.Point(208, 67);
             this.grbRegistro.Name = "grbRegistro";
-            this.grbRegistro.Size = new System.Drawing.Size(526, 362);
+            this.grbRegistro.Size = new System.Drawing.Size(524, 362);
             this.grbRegistro.TabIndex = 0;
             this.grbRegistro.TabStop = false;
             this.grbRegistro.Enter += new System.EventHandler(this.grbRegistro_Enter);
@@ -237,6 +237,17 @@
             this.txtCedula.Size = new System.Drawing.Size(187, 20);
             this.txtCedula.TabIndex = 10;
             // 
+            // txtNombre
+            // 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombre.Location = new System.Drawing.Point(72, 27);
+            this.txtNombre.MaxLength = 20;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(187, 20);
+            this.txtNombre.TabIndex = 4;
+            // 
             // txtId_User
             // 
             this.txtId_User.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -247,19 +258,6 @@
             this.txtId_User.Name = "txtId_User";
             this.txtId_User.Size = new System.Drawing.Size(187, 20);
             this.txtId_User.TabIndex = 11;
-            // 
-            // lblTipoUsuario
-            // 
-            this.lblTipoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTipoUsuario.AutoSize = true;
-            this.lblTipoUsuario.Location = new System.Drawing.Point(273, 90);
-            this.lblTipoUsuario.Name = "lblTipoUsuario";
-            this.lblTipoUsuario.Size = new System.Drawing.Size(62, 36);
-            this.lblTipoUsuario.TabIndex = 13;
-            this.lblTipoUsuario.Text = "Tipo Usuario";
-            this.lblTipoUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -289,16 +287,18 @@
             this.cmbTipoUsuario.Size = new System.Drawing.Size(172, 21);
             this.cmbTipoUsuario.TabIndex = 15;
             // 
-            // txtNombre
+            // lblTipoUsuario
             // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblTipoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(72, 27);
-            this.txtNombre.MaxLength = 20;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(187, 20);
-            this.txtNombre.TabIndex = 4;
+            this.lblTipoUsuario.AutoSize = true;
+            this.lblTipoUsuario.Location = new System.Drawing.Point(273, 90);
+            this.lblTipoUsuario.Name = "lblTipoUsuario";
+            this.lblTipoUsuario.Size = new System.Drawing.Size(62, 36);
+            this.lblTipoUsuario.TabIndex = 13;
+            this.lblTipoUsuario.Text = "Tipo Usuario";
+            this.lblTipoUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 

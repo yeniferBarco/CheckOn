@@ -22,7 +22,8 @@ namespace CheckOn
 
         private void FrmPruebas_Load(object sender, EventArgs e)
         {
-
+            ConeccionDB c = new ConeccionDB();
+           
 
         }
 

@@ -69,6 +69,7 @@ namespace CheckOn
         {
             lbInfoVuelo.Items.Clear();
             txtIdVuelo.Clear();
+
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

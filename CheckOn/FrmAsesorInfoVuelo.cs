@@ -28,16 +28,15 @@ namespace CheckOn
         private void btmBuscar_Click(object sender, EventArgs e)
         {
             conexion.ConnectionString = "server=localhost; database=check - on; Uid=root; Pwd =; SslMode=none;";
-            //MySqlCommand comando = new MySqlCommand("SELECT * FROM flight WHERE IdFlight = @IdFlight", conexion);
+            
 
             MySqlCommand comando = new MySqlCommand("select * from flight where IdFlight = @IdFlight ", conexion);
-            //MySqlCommand Num = new MySqlCommand("select COUNT(*) from InfoVuelo", conexion);
+            
             comando.Parameters.AddWithValue("@IdFlight", txtIdVuelo.Text);
             conexion.Open();
             
             MySqlDataReader Registro = comando.ExecuteReader();
-            //MySqlDataReader Numero = Num.ExecuteReader();
-            
+           
             
             if (Registro.Read())
             {
