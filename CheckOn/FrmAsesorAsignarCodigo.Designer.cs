@@ -30,6 +30,7 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.grbCallCenterVuelo = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,8 @@
             this.txtCodMaleta = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtIdVuelo = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-24, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -68,6 +70,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grbCallCenterVuelo.AutoSize = true;
             this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grbCallCenterVuelo.Controls.Add(this.label5);
+            this.grbCallCenterVuelo.Controls.Add(this.txtIdVuelo);
             this.grbCallCenterVuelo.Controls.Add(this.button1);
             this.grbCallCenterVuelo.Controls.Add(this.btnRegistrar);
             this.grbCallCenterVuelo.Controls.Add(this.label4);
@@ -81,9 +85,19 @@
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbCallCenterVuelo.Location = new System.Drawing.Point(181, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
-            this.grbCallCenterVuelo.Size = new System.Drawing.Size(541, 356);
+            this.grbCallCenterVuelo.Size = new System.Drawing.Size(540, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(303, 263);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnRegistrar
             // 
@@ -159,15 +173,21 @@
             this.txtNombres.Size = new System.Drawing.Size(121, 20);
             this.txtNombres.TabIndex = 0;
             // 
-            // button1
+            // txtIdVuelo
             // 
-            this.button1.Location = new System.Drawing.Point(303, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtIdVuelo.Location = new System.Drawing.Point(257, 226);
+            this.txtIdVuelo.Name = "txtIdVuelo";
+            this.txtIdVuelo.Size = new System.Drawing.Size(121, 20);
+            this.txtIdVuelo.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(146, 232);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "ID Vuelo";
             // 
             // FrmAsesorAsignarCodigo
             // 
@@ -200,5 +220,7 @@
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtIdVuelo;
     }
 }
