@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConeccionDB.cs" />
     <Compile Include="FrmAsesorAgregarVuelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,12 +58,6 @@
     </Compile>
     <Compile Include="FrmAsesorAsignarCodigo.Designer.cs">
       <DependentUpon>FrmAsesorAsignarCodigo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAsesorInfoCodigoAsignado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAsesorInfoCodigoAsignado.Designer.cs">
-      <DependentUpon>FrmAsesorInfoCodigoAsignado.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAsesorInfoVuelo.cs">
       <SubType>Form</SubType>
@@ -125,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAsesorAsignarCodigo.resx">
       <DependentUpon>FrmAsesorAsignarCodigo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAsesorInfoCodigoAsignado.resx">
-      <DependentUpon>FrmAsesorInfoCodigoAsignado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAsesorInfoVuelo.resx">
       <DependentUpon>FrmAsesorInfoVuelo.cs</DependentUpon>

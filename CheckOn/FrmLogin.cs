@@ -65,13 +65,29 @@ namespace CheckOn
             comando.CommandText = "select *from user where IdUser = '" + txtUsuario.Text + "' and Password = '" + txtContrasena.Text + "'";
 
             MySqlDataReader leer = comando.ExecuteReader();
-
+            
             if (leer.Read())
             {
-                MessageBox.Show("Bienvenido");
-                this.Hide();
-                FrmAsesorPrincipal frmAsesorPrincipal = new FrmAsesorPrincipal();
-                frmAsesorPrincipal.ShowDialog();
+                
+                
+                MessageBox.Show("Bienvenido " + leer["NameUser"].ToString());
+                
+                if(leer["TypeUser"].ToString() == "Asesor aerolínea")
+                {
+                    this.Hide();
+                    FrmAsesorPrincipal frmAsesorPrincipal = new FrmAsesorPrincipal();
+                    frmAsesorPrincipal.ShowDialog();
+                    
+                }
+                else
+                {
+                    this.Hide();
+                    FrmCallCenterPrincipal frmCallCenterPrincipal = new FrmCallCenterPrincipal();
+                    frmCallCenterPrincipal.ShowDialog();
+                    
+                }
+                
+
             }
             else
             {

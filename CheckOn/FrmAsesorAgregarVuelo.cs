@@ -63,57 +63,53 @@ namespace CheckOn
 
         }
 
-        private void btnCrearVuelo_Click(object sender, EventArgs e)
+        private void btnCrearVuelo_Click_1(object sender, EventArgs e)
         {
             conexion.ConnectionString = "server=localhost; database=check - on; Uid=root; Pwd = ; SslMode=none;";
             conexion.Open();
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                
-                comando.CommandType = CommandType.Text;
-                string horaLlegada = txtHoraLlegadaH.Text + txtHoraLlegadaM.Text + txtHoraLlegadaS.Text;
-                string horaSalida = txtHoraSalidaH.Text + txtHoraSalidaM.Text + txtHoraSlidaS.Text;
-                string FechaLlegada = txtFechaLY.Text + txtFechaLM.Text+ txtFechaLD.Text;
-                string FechaSalida = txtFechaSY.Text + txtFechaSM.Text + txtFechaSD.Text;
-                string salida = txtLugarSalida.Text;
 
+                //comando.CommandType = CommandType.Text;
+                string horaLlegada = txtHoraLlegadaH.Text + txtHoraLlegadaM.Text + txtHoraLlegadaS.Text;
+                string horaSalida = txtHoraSalidaH.Text + txtHoraSalidaM.Text + txtHoraSalidaS.Text;
 
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 DialogResult result;
 
-                result = MessageBox.Show(this, "seguro que quiere guardar?", salida, buttons,
+                result = MessageBox.Show(this, "seguro que quiere guardar?", txtHoraLlegadaM.Text, buttons,
                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button1,
                 MessageBoxOptions.RightAlign);
 
                 if (result == DialogResult.Yes)
                 {
 
-                    comando.CommandText = "insert into flight(IdFlight, HourExit, HourArrive, DataSalida, DataArrive, salida, Destination, TypeFlight) values(" + txtIdVuelo.Text + ", " + horaSalida.ToString() + ", '" + horaLlegada + "', '" + FechaSalida + "', '" + FechaLlegada + "', '" + txtLugarSalida.Text + "' , '" + txtLugarDestino.Text + "' , '" + cmbTipoVuelo.Text + "')";
+                    comando.CommandText = "insert into flight(IdFlight, HourExit, HourArrive, DataSalida, DataArrive, salida, Destination, TypeFlight) values(" + txtIdVuelo.Text + ", " + horaSalida + ", '" + horaLlegada + "', '" + txtFechaSalida.Text + "', '" + txtFechaLlegada.Text + "', '" + txtSalida.Text + "' , '" + txtLlegada.Text + "' , '" + cmbTipoVuelo.Text + "')";
 
 
                     comando.Connection = conexion;
                     comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Se guardara la siguiente informacion" + horaLlegada.ToString());
+                    MessageBox.Show("Se guardara la siguiente informacion" + "\n" + "Salida \t" + txtSalida.Text + "\n" + "llegada \t" + txtLlegada.Text);
 
 
                     this.Close();
 
                 }
-                
-                
+
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ups!! houston tenemos un problema!! por favor revisa la informacion del vuelo y vuelvelo a intentar");
+                MessageBox.Show("ups!! houston tenemos un problema!! por favor revisa la informacion del vuelo y vuelvelo a intentar" + ex);
             }
             conexion.Close();
 
 
         }
 
-        private void btnBuscarVuelo_Click(object sender, EventArgs e)
+        private void Volver_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmAsesorPrincipal frmAsesorPrincipal = new FrmAsesorPrincipal();

@@ -33,7 +33,7 @@ namespace CheckOn
                 comando.CommandType = CommandType.Text;
                 comando.CommandText = "insert into passenger(NamePassenger, LastNamePassenger, CC_Passenger, IdDivaice) values('" + txtNombres.Text + "', '" + txtApellidos.Text + "', '" + txtCedula.Text + "', '" + txtCodMaleta.Text +  "')";
                 comando.Connection = conexion;
-                //comando.CommandText = "insert into layover(CC_Passenger) values('" + txtCedula.Text +  "')";
+                
 
                 conexion.Open();
                 comando.ExecuteNonQuery();
@@ -43,9 +43,15 @@ namespace CheckOn
             {
                 MessageBox.Show(ex.Message);
             }
-            this.Hide();
-            FrmLogin frmLogin = new FrmLogin();
+            
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAsesorInfoVuelo frmAsesorInfoVuelo = new FrmAsesorInfoVuelo();
+            frmAsesorInfoVuelo.ShowDialog();
         }
     }
 }

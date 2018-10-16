@@ -30,33 +30,29 @@
         {
             this.tblRegistro = new System.Windows.Forms.TableLayoutPanel();
             this.grbRegistro = new System.Windows.Forms.GroupBox();
-            this.txtFechaLD = new System.Windows.Forms.TextBox();
-            this.txtFechaLM = new System.Windows.Forms.TextBox();
-            this.txtFechaLY = new System.Windows.Forms.TextBox();
-            this.txtFechaSD = new System.Windows.Forms.TextBox();
-            this.txtFechaSM = new System.Windows.Forms.TextBox();
-            this.txtFechaSY = new System.Windows.Forms.TextBox();
-            this.btnBuscarVuelo = new System.Windows.Forms.Button();
-            this.btnCrearVuelo = new System.Windows.Forms.Button();
-            this.txtLugarDestino = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtLugarSalida = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblFechaSalida = new System.Windows.Forms.Label();
             this.cmbTipoVuelo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtHoraLlegadaS = new System.Windows.Forms.TextBox();
-            this.txtHoraLlegadaM = new System.Windows.Forms.TextBox();
-            this.txtHoraLlegadaH = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtHoraSlidaS = new System.Windows.Forms.TextBox();
-            this.txtHoraSalidaM = new System.Windows.Forms.TextBox();
-            this.txtHoraSalidaH = new System.Windows.Forms.TextBox();
             this.txtIdVuelo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.txtHoraSalidaH = new System.Windows.Forms.TextBox();
+            this.txtHoraSalidaM = new System.Windows.Forms.TextBox();
+            this.txtHoraSalidaS = new System.Windows.Forms.TextBox();
+            this.txtHoraLlegadaH = new System.Windows.Forms.TextBox();
+            this.txtHoraLlegadaM = new System.Windows.Forms.TextBox();
+            this.txtHoraLlegadaS = new System.Windows.Forms.TextBox();
+            this.btnCrearVuelo = new System.Windows.Forms.Button();
+            this.Volver = new System.Windows.Forms.Button();
+            this.txtFechaSalida = new System.Windows.Forms.TextBox();
+            this.txtFechaLlegada = new System.Windows.Forms.TextBox();
+            this.txtSalida = new System.Windows.Forms.TextBox();
+            this.txtLlegada = new System.Windows.Forms.TextBox();
             this.tblRegistro.SuspendLayout();
             this.grbRegistro.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +63,7 @@
             this.tblRegistro.ColumnCount = 3;
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
             this.tblRegistro.Controls.Add(this.grbRegistro, 1, 1);
             this.tblRegistro.Location = new System.Drawing.Point(1, 21);
             this.tblRegistro.Name = "tblRegistro";
@@ -86,107 +82,34 @@
             this.grbRegistro.AutoSize = true;
             this.grbRegistro.BackColor = System.Drawing.SystemColors.ControlLight;
             this.grbRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.grbRegistro.Controls.Add(this.txtFechaLD);
-            this.grbRegistro.Controls.Add(this.txtFechaLM);
-            this.grbRegistro.Controls.Add(this.txtFechaLY);
-            this.grbRegistro.Controls.Add(this.txtFechaSD);
-            this.grbRegistro.Controls.Add(this.txtFechaSM);
-            this.grbRegistro.Controls.Add(this.txtFechaSY);
-            this.grbRegistro.Controls.Add(this.btnBuscarVuelo);
+            this.grbRegistro.Controls.Add(this.txtLlegada);
+            this.grbRegistro.Controls.Add(this.txtSalida);
+            this.grbRegistro.Controls.Add(this.txtFechaLlegada);
+            this.grbRegistro.Controls.Add(this.txtFechaSalida);
+            this.grbRegistro.Controls.Add(this.Volver);
             this.grbRegistro.Controls.Add(this.btnCrearVuelo);
-            this.grbRegistro.Controls.Add(this.txtLugarDestino);
+            this.grbRegistro.Controls.Add(this.txtHoraLlegadaS);
+            this.grbRegistro.Controls.Add(this.txtHoraLlegadaM);
+            this.grbRegistro.Controls.Add(this.txtHoraLlegadaH);
+            this.grbRegistro.Controls.Add(this.txtHoraSalidaS);
+            this.grbRegistro.Controls.Add(this.txtHoraSalidaM);
+            this.grbRegistro.Controls.Add(this.txtHoraSalidaH);
             this.grbRegistro.Controls.Add(this.label7);
-            this.grbRegistro.Controls.Add(this.txtLugarSalida);
             this.grbRegistro.Controls.Add(this.label6);
             this.grbRegistro.Controls.Add(this.label5);
             this.grbRegistro.Controls.Add(this.lblFechaSalida);
             this.grbRegistro.Controls.Add(this.cmbTipoVuelo);
             this.grbRegistro.Controls.Add(this.label4);
-            this.grbRegistro.Controls.Add(this.txtHoraLlegadaS);
-            this.grbRegistro.Controls.Add(this.txtHoraLlegadaM);
-            this.grbRegistro.Controls.Add(this.txtHoraLlegadaH);
             this.grbRegistro.Controls.Add(this.label3);
-            this.grbRegistro.Controls.Add(this.txtHoraSlidaS);
-            this.grbRegistro.Controls.Add(this.txtHoraSalidaM);
-            this.grbRegistro.Controls.Add(this.txtHoraSalidaH);
             this.grbRegistro.Controls.Add(this.txtIdVuelo);
             this.grbRegistro.Controls.Add(this.label2);
             this.grbRegistro.Controls.Add(this.label1);
             this.grbRegistro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbRegistro.Location = new System.Drawing.Point(209, 67);
+            this.grbRegistro.Location = new System.Drawing.Point(208, 67);
             this.grbRegistro.Name = "grbRegistro";
-            this.grbRegistro.Size = new System.Drawing.Size(524, 362);
+            this.grbRegistro.Size = new System.Drawing.Size(523, 362);
             this.grbRegistro.TabIndex = 0;
             this.grbRegistro.TabStop = false;
-            // 
-            // txtFechaLD
-            // 
-            this.txtFechaLD.Location = new System.Drawing.Point(456, 151);
-            this.txtFechaLD.Name = "txtFechaLD";
-            this.txtFechaLD.Size = new System.Drawing.Size(35, 20);
-            this.txtFechaLD.TabIndex = 27;
-            // 
-            // txtFechaLM
-            // 
-            this.txtFechaLM.Location = new System.Drawing.Point(415, 151);
-            this.txtFechaLM.Name = "txtFechaLM";
-            this.txtFechaLM.Size = new System.Drawing.Size(35, 20);
-            this.txtFechaLM.TabIndex = 26;
-            // 
-            // txtFechaLY
-            // 
-            this.txtFechaLY.Location = new System.Drawing.Point(374, 151);
-            this.txtFechaLY.Name = "txtFechaLY";
-            this.txtFechaLY.Size = new System.Drawing.Size(35, 20);
-            this.txtFechaLY.TabIndex = 25;
-            // 
-            // txtFechaSD
-            // 
-            this.txtFechaSD.Location = new System.Drawing.Point(208, 151);
-            this.txtFechaSD.Name = "txtFechaSD";
-            this.txtFechaSD.Size = new System.Drawing.Size(35, 20);
-            this.txtFechaSD.TabIndex = 24;
-            // 
-            // txtFechaSM
-            // 
-            this.txtFechaSM.Location = new System.Drawing.Point(167, 151);
-            this.txtFechaSM.Name = "txtFechaSM";
-            this.txtFechaSM.Size = new System.Drawing.Size(35, 20);
-            this.txtFechaSM.TabIndex = 23;
-            // 
-            // txtFechaSY
-            // 
-            this.txtFechaSY.Location = new System.Drawing.Point(125, 151);
-            this.txtFechaSY.Name = "txtFechaSY";
-            this.txtFechaSY.Size = new System.Drawing.Size(35, 20);
-            this.txtFechaSY.TabIndex = 22;
-            // 
-            // btnBuscarVuelo
-            // 
-            this.btnBuscarVuelo.Location = new System.Drawing.Point(296, 296);
-            this.btnBuscarVuelo.Name = "btnBuscarVuelo";
-            this.btnBuscarVuelo.Size = new System.Drawing.Size(88, 23);
-            this.btnBuscarVuelo.TabIndex = 21;
-            this.btnBuscarVuelo.Text = "Volver";
-            this.btnBuscarVuelo.UseVisualStyleBackColor = true;
-            this.btnBuscarVuelo.Click += new System.EventHandler(this.btnBuscarVuelo_Click);
-            // 
-            // btnCrearVuelo
-            // 
-            this.btnCrearVuelo.Location = new System.Drawing.Point(167, 296);
-            this.btnCrearVuelo.Name = "btnCrearVuelo";
-            this.btnCrearVuelo.Size = new System.Drawing.Size(75, 23);
-            this.btnCrearVuelo.TabIndex = 20;
-            this.btnCrearVuelo.Text = "Crear Vuelo";
-            this.btnCrearVuelo.UseVisualStyleBackColor = true;
-            this.btnCrearVuelo.Click += new System.EventHandler(this.btnCrearVuelo_Click);
-            // 
-            // txtLugarDestino
-            // 
-            this.txtLugarDestino.Location = new System.Drawing.Point(372, 219);
-            this.txtLugarDestino.Name = "txtLugarDestino";
-            this.txtLugarDestino.Size = new System.Drawing.Size(100, 20);
-            this.txtLugarDestino.TabIndex = 19;
             // 
             // label7
             // 
@@ -196,13 +119,6 @@
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 18;
             this.label7.Text = "Destino";
-            // 
-            // txtLugarSalida
-            // 
-            this.txtLugarSalida.Location = new System.Drawing.Point(122, 219);
-            this.txtLugarSalida.Name = "txtLugarSalida";
-            this.txtLugarSalida.Size = new System.Drawing.Size(100, 20);
-            this.txtLugarSalida.TabIndex = 17;
             // 
             // label6
             // 
@@ -252,30 +168,6 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Tipo de Vuelo";
             // 
-            // txtHoraLlegadaS
-            // 
-            this.txtHoraLlegadaS.Location = new System.Drawing.Point(454, 104);
-            this.txtHoraLlegadaS.Name = "txtHoraLlegadaS";
-            this.txtHoraLlegadaS.Size = new System.Drawing.Size(35, 20);
-            this.txtHoraLlegadaS.TabIndex = 9;
-            this.txtHoraLlegadaS.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // txtHoraLlegadaM
-            // 
-            this.txtHoraLlegadaM.Location = new System.Drawing.Point(413, 104);
-            this.txtHoraLlegadaM.Name = "txtHoraLlegadaM";
-            this.txtHoraLlegadaM.Size = new System.Drawing.Size(35, 20);
-            this.txtHoraLlegadaM.TabIndex = 8;
-            this.txtHoraLlegadaM.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // txtHoraLlegadaH
-            // 
-            this.txtHoraLlegadaH.Location = new System.Drawing.Point(372, 104);
-            this.txtHoraLlegadaH.Name = "txtHoraLlegadaH";
-            this.txtHoraLlegadaH.Size = new System.Drawing.Size(35, 20);
-            this.txtHoraLlegadaH.TabIndex = 7;
-            this.txtHoraLlegadaH.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -285,27 +177,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Hora de Llegada: \r\n(HH:MM:SS)";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtHoraSlidaS
-            // 
-            this.txtHoraSlidaS.Location = new System.Drawing.Point(207, 104);
-            this.txtHoraSlidaS.Name = "txtHoraSlidaS";
-            this.txtHoraSlidaS.Size = new System.Drawing.Size(35, 20);
-            this.txtHoraSlidaS.TabIndex = 5;
-            // 
-            // txtHoraSalidaM
-            // 
-            this.txtHoraSalidaM.Location = new System.Drawing.Point(166, 104);
-            this.txtHoraSalidaM.Name = "txtHoraSalidaM";
-            this.txtHoraSalidaM.Size = new System.Drawing.Size(35, 20);
-            this.txtHoraSalidaM.TabIndex = 4;
-            // 
-            // txtHoraSalidaH
-            // 
-            this.txtHoraSalidaH.Location = new System.Drawing.Point(125, 104);
-            this.txtHoraSalidaH.Name = "txtHoraSalidaH";
-            this.txtHoraSalidaH.Size = new System.Drawing.Size(35, 20);
-            this.txtHoraSalidaH.TabIndex = 3;
             // 
             // txtIdVuelo
             // 
@@ -341,6 +212,96 @@
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // txtHoraSalidaH
+            // 
+            this.txtHoraSalidaH.Location = new System.Drawing.Point(125, 105);
+            this.txtHoraSalidaH.Name = "txtHoraSalidaH";
+            this.txtHoraSalidaH.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraSalidaH.TabIndex = 19;
+            // 
+            // txtHoraSalidaM
+            // 
+            this.txtHoraSalidaM.Location = new System.Drawing.Point(164, 105);
+            this.txtHoraSalidaM.Name = "txtHoraSalidaM";
+            this.txtHoraSalidaM.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraSalidaM.TabIndex = 20;
+            // 
+            // txtHoraSalidaS
+            // 
+            this.txtHoraSalidaS.Location = new System.Drawing.Point(203, 105);
+            this.txtHoraSalidaS.Name = "txtHoraSalidaS";
+            this.txtHoraSalidaS.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraSalidaS.TabIndex = 21;
+            // 
+            // txtHoraLlegadaH
+            // 
+            this.txtHoraLlegadaH.Location = new System.Drawing.Point(372, 105);
+            this.txtHoraLlegadaH.Name = "txtHoraLlegadaH";
+            this.txtHoraLlegadaH.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraLlegadaH.TabIndex = 22;
+            // 
+            // txtHoraLlegadaM
+            // 
+            this.txtHoraLlegadaM.Location = new System.Drawing.Point(411, 105);
+            this.txtHoraLlegadaM.Name = "txtHoraLlegadaM";
+            this.txtHoraLlegadaM.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraLlegadaM.TabIndex = 23;
+            // 
+            // txtHoraLlegadaS
+            // 
+            this.txtHoraLlegadaS.Location = new System.Drawing.Point(450, 105);
+            this.txtHoraLlegadaS.Name = "txtHoraLlegadaS";
+            this.txtHoraLlegadaS.Size = new System.Drawing.Size(32, 20);
+            this.txtHoraLlegadaS.TabIndex = 24;
+            // 
+            // btnCrearVuelo
+            // 
+            this.btnCrearVuelo.Location = new System.Drawing.Point(164, 289);
+            this.btnCrearVuelo.Name = "btnCrearVuelo";
+            this.btnCrearVuelo.Size = new System.Drawing.Size(75, 23);
+            this.btnCrearVuelo.TabIndex = 25;
+            this.btnCrearVuelo.Text = "Crear";
+            this.btnCrearVuelo.UseVisualStyleBackColor = true;
+            this.btnCrearVuelo.Click += new System.EventHandler(this.btnCrearVuelo_Click_1);
+            // 
+            // Volver
+            // 
+            this.Volver.Location = new System.Drawing.Point(344, 289);
+            this.Volver.Name = "Volver";
+            this.Volver.Size = new System.Drawing.Size(75, 23);
+            this.Volver.TabIndex = 26;
+            this.Volver.Text = "Volver";
+            this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.Click += new System.EventHandler(this.Volver_Click);
+            // 
+            // txtFechaSalida
+            // 
+            this.txtFechaSalida.Location = new System.Drawing.Point(125, 153);
+            this.txtFechaSalida.Name = "txtFechaSalida";
+            this.txtFechaSalida.Size = new System.Drawing.Size(117, 20);
+            this.txtFechaSalida.TabIndex = 27;
+            // 
+            // txtFechaLlegada
+            // 
+            this.txtFechaLlegada.Location = new System.Drawing.Point(375, 153);
+            this.txtFechaLlegada.Name = "txtFechaLlegada";
+            this.txtFechaLlegada.Size = new System.Drawing.Size(114, 20);
+            this.txtFechaLlegada.TabIndex = 28;
+            // 
+            // txtSalida
+            // 
+            this.txtSalida.Location = new System.Drawing.Point(125, 219);
+            this.txtSalida.Name = "txtSalida";
+            this.txtSalida.Size = new System.Drawing.Size(117, 20);
+            this.txtSalida.TabIndex = 29;
+            // 
+            // txtLlegada
+            // 
+            this.txtLlegada.Location = new System.Drawing.Point(375, 219);
+            this.txtLlegada.Name = "txtLlegada";
+            this.txtLlegada.Size = new System.Drawing.Size(114, 20);
+            this.txtLlegada.TabIndex = 30;
+            // 
             // FrmAsesorAgregarVuelo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,31 +326,27 @@
         private System.Windows.Forms.TableLayoutPanel tblRegistro;
         private System.Windows.Forms.GroupBox grbRegistro;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.TextBox txtHoraLlegadaS;
-        private System.Windows.Forms.TextBox txtHoraLlegadaM;
-        private System.Windows.Forms.TextBox txtHoraLlegadaH;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtHoraSlidaS;
-        private System.Windows.Forms.TextBox txtHoraSalidaM;
-        private System.Windows.Forms.TextBox txtHoraSalidaH;
         private System.Windows.Forms.TextBox txtIdVuelo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbTipoVuelo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblFechaSalida;
-        private System.Windows.Forms.TextBox txtLugarDestino;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtLugarSalida;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnBuscarVuelo;
+        private System.Windows.Forms.Button Volver;
         private System.Windows.Forms.Button btnCrearVuelo;
-        private System.Windows.Forms.TextBox txtFechaLD;
-        private System.Windows.Forms.TextBox txtFechaLM;
-        private System.Windows.Forms.TextBox txtFechaLY;
-        private System.Windows.Forms.TextBox txtFechaSD;
-        private System.Windows.Forms.TextBox txtFechaSM;
-        private System.Windows.Forms.TextBox txtFechaSY;
+        private System.Windows.Forms.TextBox txtHoraLlegadaS;
+        private System.Windows.Forms.TextBox txtHoraLlegadaM;
+        private System.Windows.Forms.TextBox txtHoraLlegadaH;
+        private System.Windows.Forms.TextBox txtHoraSalidaS;
+        private System.Windows.Forms.TextBox txtHoraSalidaM;
+        private System.Windows.Forms.TextBox txtHoraSalidaH;
+        private System.Windows.Forms.TextBox txtLlegada;
+        private System.Windows.Forms.TextBox txtSalida;
+        private System.Windows.Forms.TextBox txtFechaLlegada;
+        private System.Windows.Forms.TextBox txtFechaSalida;
     }
 }

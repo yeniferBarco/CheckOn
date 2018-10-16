@@ -31,7 +31,6 @@ C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-mas
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.csprojResolveAssemblyReference.cache
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorAgregarVuelo.resources
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorAsignarCodigo.resources
-C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorInfoCodigoAsignado.resources
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorInfoVuelo.resources
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorPrincipal.resources
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.FrmCallCenterMaleta.resources

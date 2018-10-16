@@ -35,9 +35,9 @@
             this.txtDocumentoUsuario = new System.Windows.Forms.TextBox();
             this.btnBuscarVuelo = new System.Windows.Forms.Button();
             this.lbInfoPasajero = new System.Windows.Forms.ListBox();
+            this.lbInfoMaleta = new System.Windows.Forms.ListBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lbInfoMaleta = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-24, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -70,9 +70,9 @@
             this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.grbCallCenterVuelo.Controls.Add(this.tableLayoutPanel3);
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbCallCenterVuelo.Location = new System.Drawing.Point(181, 52);
+            this.grbCallCenterVuelo.Location = new System.Drawing.Point(180, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
-            this.grbCallCenterVuelo.Size = new System.Drawing.Size(541, 356);
+            this.grbCallCenterVuelo.Size = new System.Drawing.Size(540, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
             // 
@@ -150,6 +150,14 @@
             this.lbInfoPasajero.Size = new System.Drawing.Size(227, 134);
             this.lbInfoPasajero.TabIndex = 10;
             // 
+            // lbInfoMaleta
+            // 
+            this.lbInfoMaleta.FormattingEnabled = true;
+            this.lbInfoMaleta.Location = new System.Drawing.Point(236, 57);
+            this.lbInfoMaleta.Name = "lbInfoMaleta";
+            this.lbInfoMaleta.Size = new System.Drawing.Size(193, 134);
+            this.lbInfoMaleta.TabIndex = 11;
+            // 
             // btnVolver
             // 
             this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -172,14 +180,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(815, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lbInfoMaleta
-            // 
-            this.lbInfoMaleta.FormattingEnabled = true;
-            this.lbInfoMaleta.Location = new System.Drawing.Point(236, 57);
-            this.lbInfoMaleta.Name = "lbInfoMaleta";
-            this.lbInfoMaleta.Size = new System.Drawing.Size(193, 134);
-            this.lbInfoMaleta.TabIndex = 11;
             // 
             // FrmCallCenterMaleta
             // 
