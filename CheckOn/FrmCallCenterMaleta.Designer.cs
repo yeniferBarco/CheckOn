@@ -38,6 +38,7 @@
             this.lbInfoMaleta = new System.Windows.Forms.ListBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.cmbOpciones = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -50,7 +51,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-24, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -72,7 +73,7 @@
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbCallCenterVuelo.Location = new System.Drawing.Point(180, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
-            this.grbCallCenterVuelo.Size = new System.Drawing.Size(540, 356);
+            this.grbCallCenterVuelo.Size = new System.Drawing.Size(538, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
             // 
@@ -106,6 +107,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnBuscarVuelo, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.lbInfoPasajero, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lbInfoMaleta, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.cmbOpciones, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 65);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -181,6 +183,18 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // cmbOpciones
+            // 
+            this.cmbOpciones.FormattingEnabled = true;
+            this.cmbOpciones.Items.AddRange(new object[] {
+            "-- Selecione una opcion --",
+            "Cedula del pasajero",
+            "ID Maleta"});
+            this.cmbOpciones.Location = new System.Drawing.Point(3, 26);
+            this.cmbOpciones.Name = "cmbOpciones";
+            this.cmbOpciones.Size = new System.Drawing.Size(165, 21);
+            this.cmbOpciones.TabIndex = 12;
+            // 
             // FrmCallCenterMaleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,5 +228,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.ListBox lbInfoPasajero;
         private System.Windows.Forms.ListBox lbInfoMaleta;
+        private System.Windows.Forms.ComboBox cmbOpciones;
     }
 }

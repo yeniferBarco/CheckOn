@@ -21,5 +21,10 @@ namespace CheckOn
         {
 
         }
+
+        private void btnBuscarVuelo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

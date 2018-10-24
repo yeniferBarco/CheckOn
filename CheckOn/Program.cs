@@ -20,7 +20,7 @@ namespace CheckOn
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAsesorAsignarCodigo());
+            Application.Run(new FrmLogin());
         }
     }
 }
