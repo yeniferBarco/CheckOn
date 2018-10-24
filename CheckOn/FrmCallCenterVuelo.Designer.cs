@@ -34,10 +34,10 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtIdVuelo = new System.Windows.Forms.TextBox();
             this.btnBuscarVuelo = new System.Windows.Forms.Button();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.gpbInfoVuelo = new System.Windows.Forms.GroupBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -73,7 +73,7 @@
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbCallCenterVuelo.Location = new System.Drawing.Point(182, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
-            this.grbCallCenterVuelo.Size = new System.Drawing.Size(544, 356);
+            this.grbCallCenterVuelo.Size = new System.Drawing.Size(543, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
             // 
@@ -101,7 +101,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             this.tableLayoutPanel2.Controls.Add(this.txtIdVuelo, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnBuscarVuelo, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 2);
@@ -140,14 +140,7 @@
             this.btnBuscarVuelo.TabIndex = 4;
             this.btnBuscarVuelo.Text = "BUSCAR";
             this.btnBuscarVuelo.UseVisualStyleBackColor = false;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 475);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(863, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.btnBuscarVuelo.Click += new System.EventHandler(this.btnBuscarVuelo_Click);
             // 
             // groupBox1
             // 
@@ -182,6 +175,14 @@
             this.gpbInfoVuelo.Size = new System.Drawing.Size(193, 136);
             this.gpbInfoVuelo.TabIndex = 9;
             this.gpbInfoVuelo.TabStop = false;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 475);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(863, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // FrmCallCenterVuelo
             // 

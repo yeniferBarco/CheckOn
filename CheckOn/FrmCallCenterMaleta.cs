@@ -37,31 +37,61 @@ namespace CheckOn
         {
             conexion.ConnectionString = "server=localhost; database=check - on; Uid=root; Pwd =; SslMode=none;";
             //MySqlCommand comando = new MySqlCommand("SELECT * FROM flight WHERE IdFlight = @IdFlight", conexion);
-
-            MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where CC_Passenger = @CC_Passenger ", conexion);
-            //MySqlCommand Num = new MySqlCommand("select COUNT(*) from InfoVuelo", conexion);
-            comando.Parameters.AddWithValue("@CC_Passenger", txtDocumentoUsuario.Text);
-            conexion.Open();
-
-            MySqlDataReader Registro = comando.ExecuteReader();
-            //MySqlDataReader Numero = Num.ExecuteReader();
-
-
-            if (Registro.Read())
+            if (cmbOpciones.Text == "Cedula del pasajero")
             {
+                MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where CC_Passenger = @CC_Passenger ", conexion);
+                //MySqlCommand Num = new MySqlCommand("select COUNT(*) from InfoVuelo", conexion);
+                comando.Parameters.AddWithValue("@CC_Passenger", txtDocumentoUsuario.Text);
+                conexion.Open();
 
-                lbInfoPasajero.Items.Add("Nombres \t " + Registro["NamePassenger"].ToString() );
-                lbInfoPasajero.Items.Add("Apellidos \t" + Registro["LastNamePassenger"].ToString());
-                /*lbInfoPasajero.Items.Add("Tipo de vuelo \t" + Registro["TypeFlight"].ToString());
-                lbInfoPasajero.Items.Add("Origen \t" + Registro["salida"].ToString());
-                lbInfoPasajero.Items.Add("Destino \t" + Registro["Destination"].ToString());)*/
+                MySqlDataReader Registro = comando.ExecuteReader();
+                //MySqlDataReader Numero = Num.ExecuteReader();
 
 
-                lbInfoMaleta.Items.Add("ID maleta \t" + Registro["IdDivaice"].ToString());
-                lbInfoMaleta.Items.Add("Latitud \t" + Registro["Latitud"].ToString());
+                if (Registro.Read())
+                {
 
+                    lbInfoPasajero.Items.Add("Nombres \t " + Registro["NamePassenger"].ToString());
+                    lbInfoPasajero.Items.Add("Apellidos \t" + Registro["LastNamePassenger"].ToString());
+                    /*lbInfoPasajero.Items.Add("Tipo de vuelo \t" + Registro["TypeFlight"].ToString());
+                    lbInfoPasajero.Items.Add("Origen \t" + Registro["salida"].ToString());
+                    lbInfoPasajero.Items.Add("Destino \t" + Registro["Destination"].ToString());)*/
+
+
+                    lbInfoMaleta.Items.Add("ID maleta \t" + Registro["IdDivaice"].ToString());
+                    lbInfoMaleta.Items.Add("Latitud \t" + Registro["Latitud"].ToString());
+                }
+
+                
             }
+            
+            else
+            {
+                MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where IdDivaice = @IdDivaice ", conexion);
+                //MySqlCommand Num = new MySqlCommand("select COUNT(*) from InfoVuelo", conexion);
+                comando.Parameters.AddWithValue("@IdDivaice", txtDocumentoUsuario.Text);
+                conexion.Open();
 
+                MySqlDataReader Registro = comando.ExecuteReader();
+                //MySqlDataReader Numero = Num.ExecuteReader();
+
+
+                if (Registro.Read())
+                {
+
+                    lbInfoPasajero.Items.Add("Nombres \t " + Registro["NamePassenger"].ToString());
+                    lbInfoPasajero.Items.Add("Apellidos \t" + Registro["LastNamePassenger"].ToString());
+                    /*lbInfoPasajero.Items.Add("Tipo de vuelo \t" + Registro["TypeFlight"].ToString());
+                    lbInfoPasajero.Items.Add("Origen \t" + Registro["salida"].ToString());
+                    lbInfoPasajero.Items.Add("Destino \t" + Registro["Destination"].ToString());)*/
+
+
+                    lbInfoMaleta.Items.Add("ID maleta \t" + Registro["IdDivaice"].ToString());
+                    lbInfoMaleta.Items.Add("Latitud \t" + Registro["Latitud"].ToString());
+                }
+            }
+            conexion.Close();
         }
+
     }
 }
