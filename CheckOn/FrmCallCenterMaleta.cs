@@ -39,7 +39,7 @@ namespace CheckOn
             //MySqlCommand comando = new MySqlCommand("SELECT * FROM flight WHERE IdFlight = @IdFlight", conexion);
             if (cmbOpciones.Text == "Cedula del pasajero")
             {
-                MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where CC_Passenger = @CC_Passenger ", conexion);
+                MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where p.IdDivaice = d.IdDivaice and CC_Passenger = @CC_Passenger ", conexion);
                 //MySqlCommand Num = new MySqlCommand("select COUNT(*) from InfoVuelo", conexion);
                 comando.Parameters.AddWithValue("@CC_Passenger", txtDocumentoUsuario.Text);
                 conexion.Open();
@@ -67,7 +67,7 @@ namespace CheckOn
             
             else
             {
-                MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where IdDivaice = @IdDivaice ", conexion);
+                MySqlCommand comando = new MySqlCommand("select * from passenger p JOIN divaice d where d.IdDivaice = p.IdDivaice and p.idDivaice = @IdDivaice ", conexion);
                 //MySqlCommand Num = new MySqlCommand("select COUNT(*) from InfoVuelo", conexion);
                 comando.Parameters.AddWithValue("@IdDivaice", txtDocumentoUsuario.Text);
                 conexion.Open();
