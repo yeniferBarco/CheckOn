@@ -93,5 +93,28 @@ namespace CheckOn
             conexion.Close();
         }
 
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnGenerarMapa_Click(object sender, EventArgs e)
+        {
+            
+            FrmGenerarMapa frmGenerarMapa = new FrmGenerarMapa();
+            this.Hide();
+            frmGenerarMapa.ShowDialog();
+            
+        }
+
+        private void txtDocumentoUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmCallCenterMaleta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

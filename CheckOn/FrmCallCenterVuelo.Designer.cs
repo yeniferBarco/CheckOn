@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -71,7 +71,7 @@
             this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.grbCallCenterVuelo.Controls.Add(this.tableLayoutPanel3);
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbCallCenterVuelo.Location = new System.Drawing.Point(182, 52);
+            this.grbCallCenterVuelo.Location = new System.Drawing.Point(181, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
             this.grbCallCenterVuelo.Size = new System.Drawing.Size(543, 356);
             this.grbCallCenterVuelo.TabIndex = 2;

@@ -71,7 +71,7 @@
             this.tblAsesor.ColumnCount = 3;
             this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tblAsesor.Controls.Add(this.grbAsesor, 1, 1);
             this.tblAsesor.Location = new System.Drawing.Point(-163, -49);
             this.tblAsesor.Name = "tblAsesor";
@@ -99,7 +99,7 @@
             this.grbAsesor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbAsesor.Location = new System.Drawing.Point(208, 67);
             this.grbAsesor.Name = "grbAsesor";
-            this.grbAsesor.Size = new System.Drawing.Size(522, 362);
+            this.grbAsesor.Size = new System.Drawing.Size(521, 362);
             this.grbAsesor.TabIndex = 0;
             this.grbAsesor.TabStop = false;
             // 

@@ -44,3 +44,29 @@ C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-mas
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.csproj.GenerateResource.Cache
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.exe
 C:\Users\ACER\Documents\universidad\Gestion de la calidad\Check - On\CheckOn-master\CheckOn\CheckOn\obj\Debug\CheckOn.pdb
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\CheckOn.exe.config
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\CheckOn.exe
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\CheckOn.pdb
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\GMap.NET.Core.dll
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\MySql.Data.dll
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\Google.Protobuf.dll
+D:\Documents\GitHub\CheckOn\CheckOn\bin\Debug\MySql.Data.xml
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorAgregarVuelo.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorAsignarCodigo.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorInfoVuelo.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmAsesorPrincipal.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmCallCenterMaleta.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmCallCenterPrincipal.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmCallCenterVuelo.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmGenerarMapa.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmLogin.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmInicial.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmPruebas.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.FrmRegistro.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.Properties.Resources.resources
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.csproj.GenerateResource.Cache
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.exe
+D:\Documents\GitHub\CheckOn\CheckOn\obj\Debug\CheckOn.pdb

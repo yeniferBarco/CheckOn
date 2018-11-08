@@ -36,9 +36,10 @@
             this.btnBuscarVuelo = new System.Windows.Forms.Button();
             this.lbInfoPasajero = new System.Windows.Forms.ListBox();
             this.lbInfoMaleta = new System.Windows.Forms.ListBox();
+            this.cmbOpciones = new System.Windows.Forms.ComboBox();
+            this.btnGenerarMapa = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.cmbOpciones = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -51,7 +52,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-24, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -71,9 +72,9 @@
             this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.grbCallCenterVuelo.Controls.Add(this.tableLayoutPanel3);
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbCallCenterVuelo.Location = new System.Drawing.Point(180, 52);
+            this.grbCallCenterVuelo.Location = new System.Drawing.Point(178, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
-            this.grbCallCenterVuelo.Size = new System.Drawing.Size(538, 356);
+            this.grbCallCenterVuelo.Size = new System.Drawing.Size(534, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
             // 
@@ -108,6 +109,7 @@
             this.tableLayoutPanel2.Controls.Add(this.lbInfoPasajero, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lbInfoMaleta, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.cmbOpciones, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnGenerarMapa, 2, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 65);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -119,6 +121,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(516, 196);
             this.tableLayoutPanel2.TabIndex = 2;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // txtDocumentoUsuario
             // 
@@ -130,6 +133,7 @@
             this.txtDocumentoUsuario.Name = "txtDocumentoUsuario";
             this.txtDocumentoUsuario.Size = new System.Drawing.Size(193, 20);
             this.txtDocumentoUsuario.TabIndex = 6;
+            this.txtDocumentoUsuario.TextChanged += new System.EventHandler(this.txtDocumentoUsuario_TextChanged);
             // 
             // btnBuscarVuelo
             // 
@@ -160,6 +164,30 @@
             this.lbInfoMaleta.Size = new System.Drawing.Size(193, 134);
             this.lbInfoMaleta.TabIndex = 11;
             // 
+            // cmbOpciones
+            // 
+            this.cmbOpciones.FormattingEnabled = true;
+            this.cmbOpciones.Items.AddRange(new object[] {
+            "-- Selecione una opcion --",
+            "Cedula del pasajero",
+            "ID Maleta"});
+            this.cmbOpciones.Location = new System.Drawing.Point(3, 26);
+            this.cmbOpciones.Name = "cmbOpciones";
+            this.cmbOpciones.Size = new System.Drawing.Size(165, 21);
+            this.cmbOpciones.TabIndex = 12;
+            // 
+            // btnGenerarMapa
+            // 
+            this.btnGenerarMapa.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGenerarMapa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerarMapa.Location = new System.Drawing.Point(435, 57);
+            this.btnGenerarMapa.Name = "btnGenerarMapa";
+            this.btnGenerarMapa.Size = new System.Drawing.Size(78, 23);
+            this.btnGenerarMapa.TabIndex = 13;
+            this.btnGenerarMapa.Text = "GENERAR MAPA";
+            this.btnGenerarMapa.UseVisualStyleBackColor = false;
+            this.btnGenerarMapa.Click += new System.EventHandler(this.btnGenerarMapa_Click);
+            // 
             // btnVolver
             // 
             this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -183,18 +211,6 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // cmbOpciones
-            // 
-            this.cmbOpciones.FormattingEnabled = true;
-            this.cmbOpciones.Items.AddRange(new object[] {
-            "-- Selecione una opcion --",
-            "Cedula del pasajero",
-            "ID Maleta"});
-            this.cmbOpciones.Location = new System.Drawing.Point(3, 26);
-            this.cmbOpciones.Name = "cmbOpciones";
-            this.cmbOpciones.Size = new System.Drawing.Size(165, 21);
-            this.cmbOpciones.TabIndex = 12;
-            // 
             // FrmCallCenterMaleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +221,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCallCenterMaleta";
             this.Text = "Call center maleta";
+            this.Load += new System.EventHandler(this.FrmCallCenterMaleta_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.grbCallCenterVuelo.ResumeLayout(false);
@@ -229,5 +246,6 @@
         private System.Windows.Forms.ListBox lbInfoPasajero;
         private System.Windows.Forms.ListBox lbInfoMaleta;
         private System.Windows.Forms.ComboBox cmbOpciones;
+        private System.Windows.Forms.Button btnGenerarMapa;
     }
 }
