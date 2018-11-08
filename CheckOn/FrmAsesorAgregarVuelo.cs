@@ -91,7 +91,7 @@ namespace CheckOn
                     comando.Connection = conexion;
                     comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Se guardara la siguiente informacion" + "\n" + "Salida \t" + txtSalida.Text + "\n" + "llegada \t" + txtLlegada.Text);
+                    MessageBox.Show("Se guardara la siguiente informacion" + "\n" + "Id del vuelo \t" + txtIdVuelo + "Hora de salida \t" + horaSalida + "Hora de llegada \t" + horaLlegada + "Fecha de salida \t" + txtFechaSalida + "Fecha llegada \t" + txtFechaLlegada +  "Salida \t" + txtSalida.Text + "\n" + "llegada \t" + txtLlegada.Text + "Tipo de vuelo \t" + cmbTipoVuelo);
 
 
                     this.Close();

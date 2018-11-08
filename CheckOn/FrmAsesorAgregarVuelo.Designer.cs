@@ -30,6 +30,18 @@
         {
             this.tblRegistro = new System.Windows.Forms.TableLayoutPanel();
             this.grbRegistro = new System.Windows.Forms.GroupBox();
+            this.txtLlegada = new System.Windows.Forms.TextBox();
+            this.txtSalida = new System.Windows.Forms.TextBox();
+            this.txtFechaLlegada = new System.Windows.Forms.TextBox();
+            this.txtFechaSalida = new System.Windows.Forms.TextBox();
+            this.Volver = new System.Windows.Forms.Button();
+            this.btnCrearVuelo = new System.Windows.Forms.Button();
+            this.txtHoraLlegadaS = new System.Windows.Forms.TextBox();
+            this.txtHoraLlegadaM = new System.Windows.Forms.TextBox();
+            this.txtHoraLlegadaH = new System.Windows.Forms.TextBox();
+            this.txtHoraSalidaS = new System.Windows.Forms.TextBox();
+            this.txtHoraSalidaM = new System.Windows.Forms.TextBox();
+            this.txtHoraSalidaH = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,18 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.txtHoraSalidaH = new System.Windows.Forms.TextBox();
-            this.txtHoraSalidaM = new System.Windows.Forms.TextBox();
-            this.txtHoraSalidaS = new System.Windows.Forms.TextBox();
-            this.txtHoraLlegadaH = new System.Windows.Forms.TextBox();
-            this.txtHoraLlegadaM = new System.Windows.Forms.TextBox();
-            this.txtHoraLlegadaS = new System.Windows.Forms.TextBox();
-            this.btnCrearVuelo = new System.Windows.Forms.Button();
-            this.Volver = new System.Windows.Forms.Button();
-            this.txtFechaSalida = new System.Windows.Forms.TextBox();
-            this.txtFechaLlegada = new System.Windows.Forms.TextBox();
-            this.txtSalida = new System.Windows.Forms.TextBox();
-            this.txtLlegada = new System.Windows.Forms.TextBox();
             this.tblRegistro.SuspendLayout();
             this.grbRegistro.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             this.tblRegistro.ColumnCount = 3;
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tblRegistro.Controls.Add(this.grbRegistro, 1, 1);
             this.tblRegistro.Location = new System.Drawing.Point(1, 21);
             this.tblRegistro.Name = "tblRegistro";
@@ -80,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grbRegistro.AutoSize = true;
-            this.grbRegistro.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grbRegistro.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.grbRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.grbRegistro.Controls.Add(this.txtLlegada);
             this.grbRegistro.Controls.Add(this.txtSalida);
@@ -107,9 +107,101 @@
             this.grbRegistro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbRegistro.Location = new System.Drawing.Point(208, 67);
             this.grbRegistro.Name = "grbRegistro";
-            this.grbRegistro.Size = new System.Drawing.Size(523, 362);
+            this.grbRegistro.Size = new System.Drawing.Size(521, 362);
             this.grbRegistro.TabIndex = 0;
             this.grbRegistro.TabStop = false;
+            // 
+            // txtLlegada
+            // 
+            this.txtLlegada.Location = new System.Drawing.Point(375, 219);
+            this.txtLlegada.Name = "txtLlegada";
+            this.txtLlegada.Size = new System.Drawing.Size(114, 20);
+            this.txtLlegada.TabIndex = 12;
+            // 
+            // txtSalida
+            // 
+            this.txtSalida.Location = new System.Drawing.Point(125, 219);
+            this.txtSalida.Name = "txtSalida";
+            this.txtSalida.Size = new System.Drawing.Size(117, 20);
+            this.txtSalida.TabIndex = 11;
+            // 
+            // txtFechaLlegada
+            // 
+            this.txtFechaLlegada.Location = new System.Drawing.Point(375, 153);
+            this.txtFechaLlegada.Name = "txtFechaLlegada";
+            this.txtFechaLlegada.Size = new System.Drawing.Size(114, 20);
+            this.txtFechaLlegada.TabIndex = 10;
+            // 
+            // txtFechaSalida
+            // 
+            this.txtFechaSalida.Location = new System.Drawing.Point(125, 153);
+            this.txtFechaSalida.Name = "txtFechaSalida";
+            this.txtFechaSalida.Size = new System.Drawing.Size(117, 20);
+            this.txtFechaSalida.TabIndex = 9;
+            // 
+            // Volver
+            // 
+            this.Volver.BackColor = System.Drawing.SystemColors.Menu;
+            this.Volver.Location = new System.Drawing.Point(329, 277);
+            this.Volver.Name = "Volver";
+            this.Volver.Size = new System.Drawing.Size(90, 31);
+            this.Volver.TabIndex = 14;
+            this.Volver.Text = "Volver";
+            this.Volver.UseVisualStyleBackColor = false;
+            this.Volver.Click += new System.EventHandler(this.Volver_Click);
+            // 
+            // btnCrearVuelo
+            // 
+            this.btnCrearVuelo.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnCrearVuelo.Location = new System.Drawing.Point(149, 277);
+            this.btnCrearVuelo.Name = "btnCrearVuelo";
+            this.btnCrearVuelo.Size = new System.Drawing.Size(90, 31);
+            this.btnCrearVuelo.TabIndex = 13;
+            this.btnCrearVuelo.Text = "Crear";
+            this.btnCrearVuelo.UseVisualStyleBackColor = false;
+            this.btnCrearVuelo.Click += new System.EventHandler(this.btnCrearVuelo_Click_1);
+            // 
+            // txtHoraLlegadaS
+            // 
+            this.txtHoraLlegadaS.Location = new System.Drawing.Point(450, 105);
+            this.txtHoraLlegadaS.Name = "txtHoraLlegadaS";
+            this.txtHoraLlegadaS.Size = new System.Drawing.Size(32, 20);
+            this.txtHoraLlegadaS.TabIndex = 8;
+            // 
+            // txtHoraLlegadaM
+            // 
+            this.txtHoraLlegadaM.Location = new System.Drawing.Point(411, 105);
+            this.txtHoraLlegadaM.Name = "txtHoraLlegadaM";
+            this.txtHoraLlegadaM.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraLlegadaM.TabIndex = 7;
+            // 
+            // txtHoraLlegadaH
+            // 
+            this.txtHoraLlegadaH.Location = new System.Drawing.Point(372, 105);
+            this.txtHoraLlegadaH.Name = "txtHoraLlegadaH";
+            this.txtHoraLlegadaH.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraLlegadaH.TabIndex = 6;
+            // 
+            // txtHoraSalidaS
+            // 
+            this.txtHoraSalidaS.Location = new System.Drawing.Point(203, 105);
+            this.txtHoraSalidaS.Name = "txtHoraSalidaS";
+            this.txtHoraSalidaS.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraSalidaS.TabIndex = 5;
+            // 
+            // txtHoraSalidaM
+            // 
+            this.txtHoraSalidaM.Location = new System.Drawing.Point(164, 105);
+            this.txtHoraSalidaM.Name = "txtHoraSalidaM";
+            this.txtHoraSalidaM.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraSalidaM.TabIndex = 4;
+            // 
+            // txtHoraSalidaH
+            // 
+            this.txtHoraSalidaH.Location = new System.Drawing.Point(125, 105);
+            this.txtHoraSalidaH.Name = "txtHoraSalidaH";
+            this.txtHoraSalidaH.Size = new System.Drawing.Size(33, 20);
+            this.txtHoraSalidaH.TabIndex = 3;
             // 
             // label7
             // 
@@ -157,7 +249,7 @@
             this.cmbTipoVuelo.Location = new System.Drawing.Point(372, 68);
             this.cmbTipoVuelo.Name = "cmbTipoVuelo";
             this.cmbTipoVuelo.Size = new System.Drawing.Size(117, 21);
-            this.cmbTipoVuelo.TabIndex = 11;
+            this.cmbTipoVuelo.TabIndex = 2;
             // 
             // label4
             // 
@@ -183,7 +275,7 @@
             this.txtIdVuelo.Location = new System.Drawing.Point(125, 65);
             this.txtIdVuelo.Name = "txtIdVuelo";
             this.txtIdVuelo.Size = new System.Drawing.Size(117, 20);
-            this.txtIdVuelo.TabIndex = 2;
+            this.txtIdVuelo.TabIndex = 1;
             this.txtIdVuelo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
@@ -211,96 +303,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(863, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // txtHoraSalidaH
-            // 
-            this.txtHoraSalidaH.Location = new System.Drawing.Point(125, 105);
-            this.txtHoraSalidaH.Name = "txtHoraSalidaH";
-            this.txtHoraSalidaH.Size = new System.Drawing.Size(33, 20);
-            this.txtHoraSalidaH.TabIndex = 19;
-            // 
-            // txtHoraSalidaM
-            // 
-            this.txtHoraSalidaM.Location = new System.Drawing.Point(164, 105);
-            this.txtHoraSalidaM.Name = "txtHoraSalidaM";
-            this.txtHoraSalidaM.Size = new System.Drawing.Size(33, 20);
-            this.txtHoraSalidaM.TabIndex = 20;
-            // 
-            // txtHoraSalidaS
-            // 
-            this.txtHoraSalidaS.Location = new System.Drawing.Point(203, 105);
-            this.txtHoraSalidaS.Name = "txtHoraSalidaS";
-            this.txtHoraSalidaS.Size = new System.Drawing.Size(33, 20);
-            this.txtHoraSalidaS.TabIndex = 21;
-            // 
-            // txtHoraLlegadaH
-            // 
-            this.txtHoraLlegadaH.Location = new System.Drawing.Point(372, 105);
-            this.txtHoraLlegadaH.Name = "txtHoraLlegadaH";
-            this.txtHoraLlegadaH.Size = new System.Drawing.Size(33, 20);
-            this.txtHoraLlegadaH.TabIndex = 22;
-            // 
-            // txtHoraLlegadaM
-            // 
-            this.txtHoraLlegadaM.Location = new System.Drawing.Point(411, 105);
-            this.txtHoraLlegadaM.Name = "txtHoraLlegadaM";
-            this.txtHoraLlegadaM.Size = new System.Drawing.Size(33, 20);
-            this.txtHoraLlegadaM.TabIndex = 23;
-            // 
-            // txtHoraLlegadaS
-            // 
-            this.txtHoraLlegadaS.Location = new System.Drawing.Point(450, 105);
-            this.txtHoraLlegadaS.Name = "txtHoraLlegadaS";
-            this.txtHoraLlegadaS.Size = new System.Drawing.Size(32, 20);
-            this.txtHoraLlegadaS.TabIndex = 24;
-            // 
-            // btnCrearVuelo
-            // 
-            this.btnCrearVuelo.Location = new System.Drawing.Point(164, 289);
-            this.btnCrearVuelo.Name = "btnCrearVuelo";
-            this.btnCrearVuelo.Size = new System.Drawing.Size(75, 23);
-            this.btnCrearVuelo.TabIndex = 25;
-            this.btnCrearVuelo.Text = "Crear";
-            this.btnCrearVuelo.UseVisualStyleBackColor = true;
-            this.btnCrearVuelo.Click += new System.EventHandler(this.btnCrearVuelo_Click_1);
-            // 
-            // Volver
-            // 
-            this.Volver.Location = new System.Drawing.Point(344, 289);
-            this.Volver.Name = "Volver";
-            this.Volver.Size = new System.Drawing.Size(75, 23);
-            this.Volver.TabIndex = 26;
-            this.Volver.Text = "Volver";
-            this.Volver.UseVisualStyleBackColor = true;
-            this.Volver.Click += new System.EventHandler(this.Volver_Click);
-            // 
-            // txtFechaSalida
-            // 
-            this.txtFechaSalida.Location = new System.Drawing.Point(125, 153);
-            this.txtFechaSalida.Name = "txtFechaSalida";
-            this.txtFechaSalida.Size = new System.Drawing.Size(117, 20);
-            this.txtFechaSalida.TabIndex = 27;
-            // 
-            // txtFechaLlegada
-            // 
-            this.txtFechaLlegada.Location = new System.Drawing.Point(375, 153);
-            this.txtFechaLlegada.Name = "txtFechaLlegada";
-            this.txtFechaLlegada.Size = new System.Drawing.Size(114, 20);
-            this.txtFechaLlegada.TabIndex = 28;
-            // 
-            // txtSalida
-            // 
-            this.txtSalida.Location = new System.Drawing.Point(125, 219);
-            this.txtSalida.Name = "txtSalida";
-            this.txtSalida.Size = new System.Drawing.Size(117, 20);
-            this.txtSalida.TabIndex = 29;
-            // 
-            // txtLlegada
-            // 
-            this.txtLlegada.Location = new System.Drawing.Point(375, 219);
-            this.txtLlegada.Name = "txtLlegada";
-            this.txtLlegada.Size = new System.Drawing.Size(114, 20);
-            this.txtLlegada.TabIndex = 30;
             // 
             // FrmAsesorAgregarVuelo
             // 

@@ -93,5 +93,9 @@ namespace CheckOn
             conexion.Close();
         }
 
+        private void btnVerMapa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

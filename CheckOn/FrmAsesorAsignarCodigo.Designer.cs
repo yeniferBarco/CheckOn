@@ -30,6 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.grbCallCenterVuelo = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtIdVuelo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@
             this.txtCodMaleta = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.txtIdVuelo = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCallCenterVuelo.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42768F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel1.Controls.Add(this.grbCallCenterVuelo, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-24, 23);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -69,7 +69,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grbCallCenterVuelo.AutoSize = true;
-            this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grbCallCenterVuelo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.grbCallCenterVuelo.Controls.Add(this.label5);
             this.grbCallCenterVuelo.Controls.Add(this.txtIdVuelo);
             this.grbCallCenterVuelo.Controls.Add(this.button1);
@@ -83,36 +83,55 @@
             this.grbCallCenterVuelo.Controls.Add(this.txtCedula);
             this.grbCallCenterVuelo.Controls.Add(this.txtNombres);
             this.grbCallCenterVuelo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grbCallCenterVuelo.Location = new System.Drawing.Point(181, 52);
+            this.grbCallCenterVuelo.Location = new System.Drawing.Point(180, 52);
             this.grbCallCenterVuelo.Name = "grbCallCenterVuelo";
             this.grbCallCenterVuelo.Size = new System.Drawing.Size(540, 356);
             this.grbCallCenterVuelo.TabIndex = 2;
             this.grbCallCenterVuelo.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(162, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "ID Vuelo";
+            // 
+            // txtIdVuelo
+            // 
+            this.txtIdVuelo.CausesValidation = false;
+            this.txtIdVuelo.Location = new System.Drawing.Point(273, 218);
+            this.txtIdVuelo.Name = "txtIdVuelo";
+            this.txtIdVuelo.Size = new System.Drawing.Size(121, 20);
+            this.txtIdVuelo.TabIndex = 4;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(303, 263);
+            this.button1.BackColor = System.Drawing.SystemColors.Menu;
+            this.button1.Location = new System.Drawing.Point(302, 275);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
+            this.button1.Size = new System.Drawing.Size(72, 31);
+            this.button1.TabIndex = 6;
             this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(184, 263);
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnRegistrar.Location = new System.Drawing.Point(183, 275);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistrar.TabIndex = 8;
+            this.btnRegistrar.Size = new System.Drawing.Size(72, 31);
+            this.btnRegistrar.TabIndex = 5;
             this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(131, 193);
+            this.label4.Location = new System.Drawing.Point(147, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 7;
@@ -121,7 +140,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(146, 150);
+            this.label3.Location = new System.Drawing.Point(162, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 6;
@@ -130,7 +149,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(143, 107);
+            this.label2.Location = new System.Drawing.Point(159, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 5;
@@ -139,7 +158,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(143, 65);
+            this.label1.Location = new System.Drawing.Point(159, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 4;
@@ -147,47 +166,31 @@
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(257, 104);
+            this.txtApellidos.Location = new System.Drawing.Point(273, 96);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(121, 20);
-            this.txtApellidos.TabIndex = 3;
+            this.txtApellidos.TabIndex = 1;
             // 
             // txtCodMaleta
             // 
-            this.txtCodMaleta.Location = new System.Drawing.Point(257, 190);
+            this.txtCodMaleta.Location = new System.Drawing.Point(273, 182);
             this.txtCodMaleta.Name = "txtCodMaleta";
             this.txtCodMaleta.Size = new System.Drawing.Size(121, 20);
-            this.txtCodMaleta.TabIndex = 2;
+            this.txtCodMaleta.TabIndex = 3;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(257, 147);
+            this.txtCedula.Location = new System.Drawing.Point(273, 139);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(121, 20);
-            this.txtCedula.TabIndex = 1;
+            this.txtCedula.TabIndex = 2;
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(257, 62);
+            this.txtNombres.Location = new System.Drawing.Point(273, 54);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(121, 20);
             this.txtNombres.TabIndex = 0;
-            // 
-            // txtIdVuelo
-            // 
-            this.txtIdVuelo.Location = new System.Drawing.Point(257, 226);
-            this.txtIdVuelo.Name = "txtIdVuelo";
-            this.txtIdVuelo.Size = new System.Drawing.Size(121, 20);
-            this.txtIdVuelo.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(146, 232);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "ID Vuelo";
             // 
             // FrmAsesorAsignarCodigo
             // 

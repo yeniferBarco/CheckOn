@@ -31,11 +31,11 @@
             this.tblAsesor = new System.Windows.Forms.TableLayoutPanel();
             this.grbAsesor = new System.Windows.Forms.GroupBox();
             this.lbInfoVuelo = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAggPasajero = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btmBuscar = new System.Windows.Forms.Button();
             this.txtIdVuelo = new System.Windows.Forms.TextBox();
-            this.btnAggPasajero = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tblAsesor.SuspendLayout();
             this.grbAsesor.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +46,7 @@
             this.tblAsesor.ColumnCount = 3;
             this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tblAsesor.Controls.Add(this.grbAsesor, 1, 1);
             this.tblAsesor.Location = new System.Drawing.Point(1, 16);
             this.tblAsesor.Name = "tblAsesor";
@@ -63,7 +63,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grbAsesor.AutoSize = true;
-            this.grbAsesor.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grbAsesor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.grbAsesor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.grbAsesor.Controls.Add(this.lbInfoVuelo);
             this.grbAsesor.Controls.Add(this.button1);
@@ -74,7 +74,7 @@
             this.grbAsesor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbAsesor.Location = new System.Drawing.Point(210, 67);
             this.grbAsesor.Name = "grbAsesor";
-            this.grbAsesor.Size = new System.Drawing.Size(527, 362);
+            this.grbAsesor.Size = new System.Drawing.Size(526, 362);
             this.grbAsesor.TabIndex = 0;
             this.grbAsesor.TabStop = false;
             // 
@@ -85,6 +85,28 @@
             this.lbInfoVuelo.Name = "lbInfoVuelo";
             this.lbInfoVuelo.Size = new System.Drawing.Size(390, 160);
             this.lbInfoVuelo.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Menu;
+            this.button1.Location = new System.Drawing.Point(161, 286);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 32);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAggPasajero
+            // 
+            this.btnAggPasajero.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnAggPasajero.Location = new System.Drawing.Point(295, 286);
+            this.btnAggPasajero.Name = "btnAggPasajero";
+            this.btnAggPasajero.Size = new System.Drawing.Size(108, 32);
+            this.btnAggPasajero.TabIndex = 4;
+            this.btnAggPasajero.Text = "Agregar Pasajero";
+            this.btnAggPasajero.UseVisualStyleBackColor = false;
+            this.btnAggPasajero.Click += new System.EventHandler(this.btnAggPasajero_Click);
             // 
             // label1
             // 
@@ -97,12 +119,13 @@
             // 
             // btmBuscar
             // 
-            this.btmBuscar.Location = new System.Drawing.Point(326, 59);
+            this.btmBuscar.BackColor = System.Drawing.SystemColors.Menu;
+            this.btmBuscar.Location = new System.Drawing.Point(326, 54);
             this.btmBuscar.Name = "btmBuscar";
-            this.btmBuscar.Size = new System.Drawing.Size(86, 23);
+            this.btmBuscar.Size = new System.Drawing.Size(86, 30);
             this.btmBuscar.TabIndex = 2;
             this.btmBuscar.Text = "Buscar";
-            this.btmBuscar.UseVisualStyleBackColor = true;
+            this.btmBuscar.UseVisualStyleBackColor = false;
             this.btmBuscar.Click += new System.EventHandler(this.btmBuscar_Click);
             // 
             // txtIdVuelo
@@ -111,26 +134,6 @@
             this.txtIdVuelo.Name = "txtIdVuelo";
             this.txtIdVuelo.Size = new System.Drawing.Size(103, 20);
             this.txtIdVuelo.TabIndex = 1;
-            // 
-            // btnAggPasajero
-            // 
-            this.btnAggPasajero.Location = new System.Drawing.Point(289, 283);
-            this.btnAggPasajero.Name = "btnAggPasajero";
-            this.btnAggPasajero.Size = new System.Drawing.Size(103, 23);
-            this.btnAggPasajero.TabIndex = 18;
-            this.btnAggPasajero.Text = "Agregar Pasajero";
-            this.btnAggPasajero.UseVisualStyleBackColor = true;
-            this.btnAggPasajero.Click += new System.EventHandler(this.btnAggPasajero_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(155, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmAsesorInfoVuelo
             // 
