@@ -48,7 +48,7 @@
             // 
             // tblLogin
             // 
-            this.tblLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tblLogin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tblLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tblLogin.ColumnCount = 5;
             this.tblLogin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -84,13 +84,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegistrar.AutoSize = true;
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.Menu;
             this.btnRegistrar.Location = new System.Drawing.Point(280, 294);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(271, 33);
-            this.btnRegistrar.TabIndex = 1;
+            this.btnRegistrar.TabIndex = 4;
             this.btnRegistrar.Text = "REGISTRARSE";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // btnIngresar
@@ -99,35 +100,36 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIngresar.AutoSize = true;
+            this.btnIngresar.BackColor = System.Drawing.SystemColors.Menu;
             this.btnIngresar.Location = new System.Drawing.Point(280, 255);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Padding = new System.Windows.Forms.Padding(1);
             this.btnIngresar.Size = new System.Drawing.Size(270, 33);
-            this.btnIngresar.TabIndex = 0;
+            this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "INGRESAR";
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click_1);
             // 
             // txtContrasena
             // 
-            this.txtContrasena.Location = new System.Drawing.Point(280, 175);
+            this.txtContrasena.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtContrasena.Location = new System.Drawing.Point(280, 178);
             this.txtContrasena.MaxLength = 20;
             this.txtContrasena.MinimumSize = new System.Drawing.Size(4, 4);
             this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(270, 20);
-            this.txtContrasena.TabIndex = 4;
+            this.txtContrasena.TabIndex = 2;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtUsuario.Location = new System.Drawing.Point(280, 139);
+            this.txtUsuario.Location = new System.Drawing.Point(280, 144);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(270, 20);
-            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.TabIndex = 1;
             // 
             // label1
             // 

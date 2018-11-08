@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAsesorPrincipal));
             this.tblRegistro = new System.Windows.Forms.TableLayoutPanel();
             this.grbRegistro = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -47,7 +48,7 @@
             this.tblRegistro.ColumnCount = 3;
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
             this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
-            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tblRegistro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.tblRegistro.Controls.Add(this.grbRegistro, 1, 1);
             this.tblRegistro.Location = new System.Drawing.Point(1, 20);
             this.tblRegistro.Name = "tblRegistro";
@@ -66,22 +67,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grbRegistro.AutoSize = true;
             this.grbRegistro.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grbRegistro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grbRegistro.BackgroundImage")));
             this.grbRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.grbRegistro.Controls.Add(this.tableLayoutPanel3);
             this.grbRegistro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.grbRegistro.Location = new System.Drawing.Point(212, 67);
             this.grbRegistro.Name = "grbRegistro";
-            this.grbRegistro.Size = new System.Drawing.Size(533, 362);
+            this.grbRegistro.Size = new System.Drawing.Size(532, 362);
             this.grbRegistro.TabIndex = 0;
             this.grbRegistro.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 26);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.63636F));
@@ -119,7 +122,7 @@
             // btnCrearVuelo
             // 
             this.btnCrearVuelo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCrearVuelo.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCrearVuelo.BackColor = System.Drawing.SystemColors.Menu;
             this.btnCrearVuelo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCrearVuelo.Location = new System.Drawing.Point(19, 93);
             this.btnCrearVuelo.Name = "btnCrearVuelo";
@@ -132,7 +135,7 @@
             // btnBuscarVuelo
             // 
             this.btnBuscarVuelo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarVuelo.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnBuscarVuelo.BackColor = System.Drawing.SystemColors.Menu;
             this.btnBuscarVuelo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscarVuelo.Location = new System.Drawing.Point(286, 93);
             this.btnBuscarVuelo.Name = "btnBuscarVuelo";
@@ -173,11 +176,11 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tblRegistro;
-        private System.Windows.Forms.GroupBox grbRegistro;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnCrearVuelo;
         private System.Windows.Forms.Button btnBuscarVuelo;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        public System.Windows.Forms.GroupBox grbRegistro;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
     }
 }

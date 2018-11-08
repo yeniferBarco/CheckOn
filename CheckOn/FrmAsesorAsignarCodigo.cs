@@ -47,8 +47,12 @@ namespace CheckOn
 
             comando.CommandText = "insert into layover(CC_Passenger, IdFlight) values('" + txtCedula.Text + "', '" + txtIdVuelo.Text + "')";
             comando.ExecuteNonQuery();
-            conexion.Close();
+            MessageBox.Show("Se guardara la siguiente informacion" + "\n" + "Nombres \t" + txtNombres.Text + "\n " + "Apellidos \t" + txtApellidos.Text + "\n " + "Cedula \t" + txtCedula.Text + "\n " + "Id maleta \t" + txtCodMaleta.Text);
 
+
+            
+            conexion.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

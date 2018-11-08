@@ -93,6 +93,7 @@ namespace CheckOn
             conexion.Close();
         }
 
+
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -113,6 +114,7 @@ namespace CheckOn
         }
 
         private void FrmCallCenterMaleta_Load(object sender, EventArgs e)
+
         {
 
         }
