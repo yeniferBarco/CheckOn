@@ -64,6 +64,100 @@
             this.grbCallCenter.TabIndex = 0;
             this.grbCallCenter.TabStop = false;
             // 
+
+            // tblAsesor
+            // 
+            this.tblAsesor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tblAsesor.ColumnCount = 3;
+            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.98013F));
+            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.01987F));
+            this.tblAsesor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.tblAsesor.Controls.Add(this.grbAsesor, 1, 1);
+            this.tblAsesor.Location = new System.Drawing.Point(-163, -49);
+            this.tblAsesor.Name = "tblAsesor";
+            this.tblAsesor.RowCount = 3;
+            this.tblAsesor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
+            this.tblAsesor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
+            this.tblAsesor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tblAsesor.Size = new System.Drawing.Size(861, 460);
+            this.tblAsesor.TabIndex = 5;
+            // 
+            // grbAsesor
+            // 
+            this.grbAsesor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbAsesor.AutoSize = true;
+            this.grbAsesor.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grbAsesor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.grbAsesor.Controls.Add(this.lbInfoVuelo);
+            this.grbAsesor.Controls.Add(this.btnBuscarMaleta);
+            this.grbAsesor.Controls.Add(this.btnBorrar);
+            this.grbAsesor.Controls.Add(this.label1);
+            this.grbAsesor.Controls.Add(this.btmBuscar);
+            this.grbAsesor.Controls.Add(this.txtIdVuelo);
+            this.grbAsesor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.grbAsesor.Location = new System.Drawing.Point(208, 67);
+            this.grbAsesor.Name = "grbAsesor";
+            this.grbAsesor.Size = new System.Drawing.Size(521, 362);
+            this.grbAsesor.TabIndex = 0;
+            this.grbAsesor.TabStop = false;
+            // 
+            // lbInfoVuelo
+            // 
+            this.lbInfoVuelo.FormattingEnabled = true;
+            this.lbInfoVuelo.Location = new System.Drawing.Point(73, 107);
+            this.lbInfoVuelo.Name = "lbInfoVuelo";
+            this.lbInfoVuelo.Size = new System.Drawing.Size(390, 160);
+            this.lbInfoVuelo.TabIndex = 20;
+            // 
+            // btnBuscarMaleta
+            // 
+            this.btnBuscarMaleta.Location = new System.Drawing.Point(285, 286);
+            this.btnBuscarMaleta.Name = "btnBuscarMaleta";
+            this.btnBuscarMaleta.Size = new System.Drawing.Size(102, 23);
+            this.btnBuscarMaleta.TabIndex = 19;
+            this.btnBuscarMaleta.Text = "Buscar Maleta";
+            this.btnBuscarMaleta.UseVisualStyleBackColor = true;
+            this.btnBuscarMaleta.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(164, 286);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(69, 23);
+            this.btnBorrar.TabIndex = 18;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnAggPasajero_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(100, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Id del vuelo";
+            // 
+            // btmBuscar
+            // 
+            this.btmBuscar.Location = new System.Drawing.Point(326, 59);
+            this.btmBuscar.Name = "btmBuscar";
+            this.btmBuscar.Size = new System.Drawing.Size(86, 23);
+            this.btmBuscar.TabIndex = 2;
+            this.btmBuscar.Text = "Buscar";
+            this.btmBuscar.UseVisualStyleBackColor = true;
+            this.btmBuscar.Click += new System.EventHandler(this.btmBuscar_Click);
+            // 
+            // txtIdVuelo
+            // 
+            this.txtIdVuelo.Location = new System.Drawing.Point(179, 61);
+            this.txtIdVuelo.Name = "txtIdVuelo";
+            this.txtIdVuelo.Size = new System.Drawing.Size(103, 20);
+            this.txtIdVuelo.TabIndex = 1;
+            // 
+
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
